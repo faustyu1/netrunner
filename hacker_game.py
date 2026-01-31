@@ -1146,7 +1146,7 @@ class GameState:
                 # Admin might detect ongoing attacks
                 if node.trace_progress > 30 and random.random() < GameConstants.ADMIN_ACTIVATE_CHANCE:
                     node.trace_speed *= 1.5
-                    self.log_event(f"Incident response activated at {node.name}"))
+                    self.log_event(f"Incident response activated at {node.name}")
 
 class GameInterface:
     def __init__(self, state: GameState):
